@@ -228,6 +228,7 @@ HTMLWidgets.widget({
     var h = el.getBoundingClientRect().height;
 
     var cloud = d3.layout.cloud();
+    d3.select(e1).html = "";  
     var svg = d3.select(el).append("svg").attr("width", w).attr("height", h);
     var background = svg.append("g");
     var vis = svg.append("g").attr("transform", "translate(" + [w >> 1, h >> 1] + ")");
